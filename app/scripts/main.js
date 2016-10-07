@@ -1,10 +1,10 @@
 /* Slider */
 $(window).on('load', function() {
-	/*$('#slider').nivoSlider({
+	$('#slider').nivoSlider({
 		directionNav: false
     	//controlNav: false,
     	//controlNavThumbs: true
-    });*/
+    });
   });
 
 /*----------------------------------*/
