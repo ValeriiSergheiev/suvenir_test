@@ -1,0 +1,320 @@
+@import "bourbon/bourbon";
+
+body {
+	font-family: 'acrobat-bold', sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+}
+
+a, button {
+	outline: none;
+}
+
+button::-moz-focus-inner {
+	border: 0;
+}
+
+.fixed {
+	position: fixed !important;
+	//z-index: 150 !important;
+}
+
+/* Header section */
+header {
+	position: relative;
+	padding-top: 30px;
+	text-align: center;
+}
+
+.header-logo {
+	p {
+		color: $light-grey-text;
+		font-size: em(46);
+		margin-top: -10px;
+	}
+}
+
+.header-logo-text {
+	p {
+		color: $light-grey-text;
+		font-size: em(19);
+	}
+}
+
+.header-btn {
+	display: inline-block;
+	background-color: #b4e50a;
+	font-size: em(23);
+	text-decoration: none !important;
+	color: #4a4a4a;
+	padding: 5px 25px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	margin-top: 12px;
+	&:hover {
+		opacity: .7;
+		color: #4a4a4a !important;
+	}
+	&:focus {
+		color: #4a4a4a !important;
+	}
+}
+
+/*a:focus {
+	color: #4a4a4a !important;
+}*/
+
+.slogan {
+	p {
+		color: #4a4a4a;
+		font-size: em(27);
+	}
+}
+
+.header-right {
+	p:first-child {
+		font-size: em(23);
+		color: #2b2b2b;
+	}
+	p {
+		font-size: em(20);
+		color: $light-grey-text;
+		margin-top: 3px;
+	}
+}
+
+/* Header menu */
+.menu {
+	position: relative;
+	z-index: 150;
+	a {
+		display: table-cell;
+		vertical-align: middle;
+		height: 80px;
+		text-decoration: none;
+		color: #000;
+		font-family: 'helvetica-bold';
+		font-size: em(18);
+		&:hover {
+			opacity: .7;
+		}
+	}
+}
+
+.mob-menu-btn {
+	display: none;
+	position: absolute;
+	z-index: 200;
+	top: 0;
+	left: 0;
+}
+
+/* Slider */
+.nivoSlider {
+	border: 1px solid #000;
+}
+
+.nivo-controlNav {
+	position: relative;
+	padding: 0;
+	margin-top: -17px;
+	z-index: 100;
+	a {
+		display: inline-block;
+		margin: 0 8px;
+		height: 14px;
+		width: 14px;
+		border-radius: 50%;
+		background-color: #494949;
+		color: transparent;
+	}
+	a.active {
+		background-color: lighten(#494949, 30%);
+	}
+}
+
+.menu-item {
+	display: inline-block;
+	//width: 320px;
+}
+
+/* Services section */
+#services {
+	//display: none;
+	margin-top: 15px;
+}
+
+.services-boxes {
+	margin-top: 60px;
+}
+
+.triangle {
+	background-image: url('../images/triangle.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-top: 10px;
+}
+
+.triangle-text {
+	p {
+		font-size: em(20);
+		line-height: 22px;
+		color: $main-grey-text;
+		text-shadow: 1px 1px lighten(#000, 50%);
+	}
+}
+
+.box-caption {
+	text-align: center;
+	font-size: em(23);
+	color: $main-grey-text;
+	margin-bottom: 45px;
+	p {
+		margin-top: 8px;
+	}
+	a {
+		text-decoration: none;
+		color: $main-grey-text;
+		&:hover {
+			opacity: .7;
+		}
+	}
+}
+
+/* Cup section */
+#cup {
+	//display: none;
+	background-color: $section-grey;
+	padding: 30px 0 60px;
+}
+
+.cup-boxes {
+	h6 {
+		text-align: center;
+		margin-bottom: 30px;
+		font-size: em(23);
+	}
+}
+
+.item-caption {
+	p {
+		font-size: em(21);
+		margin: 0 -15px;
+		margin-top: 7px;
+	}
+}
+
+.item-price {
+	p {
+		font-size: em(20);
+		margin-top: 7px;
+	}
+}
+
+.section-btn-wrapper {
+	text-align: center;
+}
+
+.section-btn {
+	@extend .header-btn;
+	margin-top: 45px;
+	padding-left: 65px;
+	padding-right: 65px;
+}
+
+/* Plate section */
+#plate {
+	@extend #cup;
+	background-color: #fff;
+}
+
+/* Magnet section */
+#magnet {
+	@extend #cup;
+}
+
+/* Other section */
+#other {
+	@extend #plate;
+}
+
+/* Clients section */
+#clients {
+	@extend #plate;
+	padding-top: 0;
+	h5 {
+		text-align: center;
+		margin-bottom: 15px;
+		font-size: em(34);
+	}
+	.box {
+		margin-top: 15px;
+	}
+}
+
+/* Call section */
+
+#call {
+	//display: none;
+}
+
+.call-content {
+	background-color: $section-yellow;
+	padding: 30px 0;
+}
+
+.call-text {
+	margin-top: 32px;
+	margin-left: 15px;
+	p {
+		font-size: em(34);
+		color: #000;
+	}
+}
+
+.call-logo {
+	margin-right: 15px;
+}
+
+/* Footer */
+footer {
+	text-align: center;
+}
+
+.footer-bottom {
+	background-color: $main-grey-text;
+	padding: 15px 0;
+}
+
+.footer-logo {
+	@extend .header-logo;
+	p {
+		color: $footer-text;
+	}
+}
+
+.footer-logo-text {
+	@extend .header-logo-text;
+	p {
+		color: $footer-text;
+	}
+}
+
+.passport {
+	@extend .slogan;
+	margin-top: 12px;
+	p {
+		color: $footer-text;
+		font-size: em(21);
+	}
+}
+
+.footer-right {
+	@extend .header-right;
+	p {
+		color: $footer-text;
+		&:first-child {
+			color: $footer-text;
+		}
+	}
+}
